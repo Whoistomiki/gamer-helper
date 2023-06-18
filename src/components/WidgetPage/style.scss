@@ -1,0 +1,84 @@
+@use "../../styles/vars"as v;
+
+.build-components {
+    position: relative;
+    width: auto;
+
+    &__component {
+        
+            .idragit {
+                display: flex;
+                justify-content: center;
+                margin: 0 1rem 0;
+                height: 2.5rem;
+                border: 1px solid v.$color-primary;
+                border-bottom: none;
+                border-radius: 15px 15px 0 0;
+                box-sizing: border-box;
+                transition: ease-in 0.3s;
+                cursor: grab;
+            
+                &:hover, &:active {
+                    border-top: 4px solid v.$color-secondary;
+                    border-right: 2px solid v.$color-secondary;
+                    border-left: 2px solid v.$color-secondary;
+                }
+
+                
+            
+            }
+    }
+
+}
+
+
+.build-container {
+    width: auto;
+    margin: auto;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 2rem auto 1rem;
+     
+
+        &__title {
+            font-size: 3.75rem;
+            font-weight: 800;
+            color: v.$color-secondary;
+            border: none;
+            background-color: transparent;
+        }
+        &__game {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: v.$color-secondary;
+            border: none;
+            background-color: transparent;
+        }
+
+        &__btn-reset {
+            margin: 1rem 0 0.5rem ;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            background-color: v.$color-secondary;
+            color: v.$color-white;
+            font-family: v.$font-type;
+            font-weight: 700;
+            border-radius: 12px;
+            font-size: 16px;
+            border: 1px solid v.$color-secondary;
+            transition: ease-in 0.1s;
+
+            &:hover {
+
+            background-color: v.$color-white;
+            color: v.$color-primary;
+            border: 1px solid v.$color-primary;
+
+            }
+        }
+    }
+}

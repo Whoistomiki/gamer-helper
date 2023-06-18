@@ -1,0 +1,50 @@
+@use '../../styles/vars' as v;
+
+
+.container-404{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    min-height: 60vh;
+   
+    @media screen and (max-width: 1580px) {
+        min-height: 82vh;
+    } 
+    @media screen and (max-width: 605px) {
+        min-height: 62vh;
+    } 
+    @media screen and (max-width: 1180px) {
+        min-height: 82vh;
+      } 
+        img{
+            position: relative;
+            bottom: -40px;
+            @media screen and (max-width: 1580px) {
+                display: block;
+                width: 1000px;
+            } 
+            @media screen and (max-width: 1380px) {
+                display: block;
+                width: 800px;
+                bottom: -90px;
+            } 
+            @media screen and (max-width: 1180px) {
+              position:static;
+              width: 585px;
+            } 
+            @media screen and (max-width: 605px) {
+                position:static;
+                width: 400px;
+                
+              } 
+            
+        }
+        h1{
+            @media screen and (max-width: 1180px) {
+                     margin-bottom: 2rem;       
+            } 
+        }
+}

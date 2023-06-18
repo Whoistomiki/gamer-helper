@@ -1,0 +1,29 @@
+// .desktop-container {
+//     @media screen and (min-width: 960px) {
+//         display: flex;
+
+//         header {
+//             display: none;
+//         }
+//     }
+// }
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+    margin: 2rem 1rem;
+
+    &__logo {
+        width: 150px;
+    }
+
+    &__burger {
+        font-size: 2rem;
+
+        @media screen and (min-width: 960px) {
+            display: none;
+        }
+    }
+}

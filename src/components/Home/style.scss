@@ -1,0 +1,182 @@
+@use '../../styles/vars' as v;
+
+.home-content {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 960px) {
+        margin: 5rem 7rem;
+    }
+        @media screen and (max-width: 1140px) and (min-width:960px) {
+            margin: 5rem 7rem;
+        }
+    
+
+    &__header {
+        h1 {
+            margin-bottom: 2rem;
+            color: v.$color-primary;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        button {
+            width: max-content;
+            padding: 1rem;
+        }
+    }
+
+    &__features {
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    &__single-feature {
+        display: flex;
+        margin-bottom: 5rem;
+
+        @media screen and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+                @media screen and (max-width: 1140px) and (min-width:960px) {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+        img {
+            width: 255px;
+            clip-path: circle();
+
+            @media screen and (max-width: 480px) {
+                margin: 2rem auto;
+            }
+                        @media screen and (max-width: 1140px) and (min-width:960px) {
+                            margin: 2rem auto;
+                        }
+        }
+
+        &--right {
+            text-align: right;
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+                         @media screen and (max-width: 1140px) and (min-width:960px) {
+                            display: flex;
+                                flex-direction: column-reverse;
+                                text-align: center;
+                         }
+        }
+    }
+
+    .feat-text {
+        display: flex;
+        color: v.$color-secondary;
+        flex-direction: column;
+
+        .feat-title {
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+    }
+}
+
+.widget-features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.home-content__widget-feature {
+
+    display: flex;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+        @media screen and (max-width: 1140px) and (min-width:960px) {
+            display: flex;
+                flex-direction: column;
+                text-align: center;
+        }
+
+    &__img {
+        // width: 115px;
+        margin: 0 1rem;
+
+        @media screen and (max-width: 480px) {
+            margin: 2rem auto;
+        }
+                @media screen and (max-width: 1140px) and (min-width:960px) {
+                    margin: 2rem auto;
+                }
+    }
+
+    &--right {
+        text-align: right;
+
+        @media screen and (max-width: 480px) {
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+                @media screen and (max-width: 1140px) and (min-width:960px) {
+                    text-align: center;
+                        display: flex;
+                        flex-direction: column-reverse;
+                }
+    }
+}
+
+.team-container {
+    h2 {
+        margin-top: 5rem;
+    }
+}
+
+.team-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &-single {
+        display: flex;
+        margin-right: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &--title {
+            font-weight: 700;
+        }
+
+        img {
+            width: 170px;
+            clip-path: circle();
+            margin-bottom: 1rem;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+@use '../../styles/vars' as v;
+
+.calc-grid {
+
+    // margin: 20px auto;
+    height: 500px;
+    // width: 500px;
+    user-select: none;
+    
+
+
+
+    .ops {
+
+        display: flex;
+
+
+        button {
+            border: 0.5px solid v.$color-primary;
+            display: flex;
+            padding: .5rem;
+
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 20%;
+            // height: 100px;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            font-size: 2rem;
+            font-family: v.$font-type;
+        }
+
+        button:hover {
+        background-color: #c9c9c9;
+        }
+
+    }
+
+    .dig button {
+        flex: 1 1 33.333%;
+
+
+        min-width: 33.333333%;
+        padding: .5rem;
+
+        background-color: #fff;
+        height: 97px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+        border: 0.5px solid v.$color-primary;
+        font-size: 2rem;
+        font-family: v.$font-type;
+
+    }
+
+    .dig button:hover {
+
+
+        background-color: #c9c9c9;
+
+    }
+
+}
+
+ .dig button:nth-child(10) {
+    border-radius: 0 0 0 15px;
+ }
+
+ .dig button:nth-child(12) {
+        border-radius: 0 0 15px 0;
+ }
+
+.output {
+    height: 100px;
+    text-align: right;
+    font-size: 2.3rem;
+    display: flex;
+    opacity: 46.5%;
+    background-color: #c5c5c5;
+    border: 1px solid v.$color-primary;
+    flex-direction: column;
+    border-radius: 15px 15px 0 0;
+    padding: .5rem;
+
+    .preRes {
+        opacity: 26.5%;
+    }
+}
+
+// .calculator-container {
+//     height: 400px;
+//     width: 100%;
+// }

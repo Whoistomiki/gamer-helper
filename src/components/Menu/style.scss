@@ -1,0 +1,102 @@
+@use '../../styles/vars' as v;
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.menu-container {
+    background-color: #FFF;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: .5s ease-in;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    overflow: scroll;
+
+    @media screen and (max-width: 960px) {
+        height: 100vh;
+    }
+
+    @media screen and (min-width: 960px) {
+        position: relative;
+        // display: inline-block;
+        transform: translateX(0);
+        left: 0px;
+        width: fit-content;
+        overflow: visible;
+        // height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        // flex-flow: column;
+    }
+}
+
+.toggeled {
+    transform: translateX(0);
+    transition: .5s ease-out;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-container__top {
+    .btn {
+        padding: auto 5px;
+        width: auto;
+        margin-right: 3rem;
+    }
+}
+
+.list-container {
+    color: v.$color-primary;
+    font-weight: 700;
+    font-size: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4rem 0;
+
+    &__link {
+        border-bottom: 1px solid v.$color-secondary;
+        padding: 1.5rem 0;
+    }
+
+
+}
+
+.link-container__bottom {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+        margin: 1rem 0;
+        width: 16rem;
+
+    }
+
+}
+
+.menu-header-container {
+    margin-top: 0;
+}
+
+
+// &__link:hover {
+// animation: menu-animation 2s ease 0s normal both;
+// }
+
+// @keyframes menu-animation {
+//     0% {
+//       transform: translateX(0);
+//     }
+//     100% {
+//       transform: translateX(100px);
+//     }
+
+//   }

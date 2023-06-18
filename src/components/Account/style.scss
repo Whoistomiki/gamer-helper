@@ -1,0 +1,155 @@
+@use '../../styles/vars' as v;
+
+
+.account-container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+
+
+    @media screen and (min-width: 960px) {
+        margin: 5rem 7rem;
+        min-height: 70vh;
+    }
+}
+
+.account-title {
+    margin: 3rem 3rem 2rem 3rem;
+}
+
+
+.account-nav {
+    font-weight: 400;
+    color: v.$color-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    p {
+        margin: 0 1rem 0;
+    }
+
+    &--select {
+        font-weight: 700;
+        color: v.$color-primary;
+    }
+
+}
+
+.settings-container {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 210px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    input {
+        max-width: 475px;
+    }
+}
+
+
+.account-btn {
+    display: flex;
+    justify-content: center;
+
+    button:first-child {
+        width: 40%;
+        margin: 0 3rem 0 0;
+        max-width: 237px;
+    }
+
+    &__delete {
+        border: none;
+        color: v.$color-primary ;
+        font-family: v.$font-type;
+        font-weight: 400;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
+
+.profil-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__avatar {
+        margin-top: 2rem;
+    }
+
+    &__biography {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem 0 2rem;
+        resize: none;
+
+        textarea {
+            resize: none;
+            margin: 2rem auto 2rem;
+            max-width: 475px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 20%;
+    }
+
+}
+
+        .delete-page {
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 210px;
+
+            &__title {
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            &__sub-title {
+                font-size: 1.3rem;
+            }
+
+            form {
+                height: 20vh;
+            }
+
+            .account-btn{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                &__delete {
+                    font-size: 1.3rem;
+                    width: fit-content;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    }
+            }
+        }

@@ -1,0 +1,84 @@
+@use "../../styles/vars" as v;
+
+.editorText {
+  margin: auto;
+  height: 550px;
+  border: solid 1px v.$color-primary;
+  padding: 1.5rem;
+  font-style: v.$font-type;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem 2rem;
+  // justify-content: center;
+  border-radius: 15px;
+  user-select: text;
+
+
+  &__title {
+    border: none;
+    user-select : none;
+    background-color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: v.$color-secondary;
+  }
+  
+  .button__container {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    
+    button {
+      user-select :none;
+      padding: 0.4rem 0.6rem;
+      margin-bottom: 1rem;
+      transition: 0.2s ease-in;
+      border: 1px solid v.$color-primary; 
+      background-color: transparent;
+      color: v.$color-secondary;
+      margin-right: .5rem;
+      
+      &:hover {
+        color: white;
+        background-color: v.$color-primary;
+      }
+
+      &:focus {
+        background-color: v.$color-primary;
+        color: white;
+      }
+    }
+
+    &__bold {
+      font-weight: 800;
+    }
+
+    &__italic {
+      font-style: italic;
+    }
+  }
+
+  li {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+
+  .DraftEditor-root {
+    border-top: solid 1px #f0890f;
+    padding: 1rem;
+    color: v.$color-secondary;
+    background-color: white;
+    height: 500px;
+    overflow: scroll;
+    scrollbar-color:v.$color-secondary;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    @media screen and (max-width: 960px) {
+      min-height: 350px;
+      height: fit-content;
+  }
+
+  }
+}

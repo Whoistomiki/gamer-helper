@@ -1,0 +1,66 @@
+@use '../../styles/vars' as v;
+
+
+.pomodoro {
+    height: 250px;
+}
+.pomodoro-container {
+    border: 1px solid v.$color-primary;
+    border-radius: 15px;
+    padding: 1.5rem 2.5rem;
+    // height: 250px;
+    // width: 480px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    user-select: none;
+
+
+    .nav-container {
+        font-size: 1rem;
+        font-weight: 800;
+        color: v.$color-primary;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            cursor: pointer;
+        }
+
+            .nav-select {
+                border-bottom: 2px solid v.$color-primary;
+            }
+    }
+
+    .number-time-container {
+        width: 30%;
+        margin: auto;
+        height: 7rem;
+        display: flex;
+
+        .time {
+            color: v.$color-primary;
+            font-weight: 800;
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        input {
+            height: 2rem;
+            width: 1em;
+            margin: auto;
+            background-color: v.$color-bg;
+        }
+    }
+
+    .pomo-start {
+        background: v.$color-secondary ;
+        border-radius: 15px;
+        color: v.$color-white;
+        font-weight: 800;
+        font-size: 1.5rem;
+        height: 2.8rem;
+        width: 8.5rem;
+        border: none;
+    }
+}
